@@ -15,7 +15,7 @@ public class App extends Application {
         FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("/main_view.fxml"));
         VBox root = fxmlLoader.load();
         Scene scene = new Scene(root, 400, 200);
-        stage.setTitle("JavaFX Welcome");
+        stage.setTitle("Loca");
         stage.setScene(scene);
         stage.show();
     }
