@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vidmot.Controller"
->
-    <Button fx:id="helloButton" text="Segðu hæ" onAction="#onHelloButtonClick"/>
-    <Label fx:id="helloLabel"/>
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="vidmot.MainController">
+    <!-- MenuBar til þess að hlaða upp skrá -->
+    <MenuBar>
+        <Menu text="File">
+            <MenuItem text="Hlaða upp skrá" onAction="#onUploadFileClick"/>
+            <MenuItem text="Hætta" onAction="#exitApplication"/>
+
+        </Menu>
+    </MenuBar>
+
 </VBox>
