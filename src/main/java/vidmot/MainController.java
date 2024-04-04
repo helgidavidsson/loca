@@ -27,6 +27,7 @@ public class MainController {
 
     @FXML
     private void exitApplication(ActionEvent event) {
-        // Implementation to exit application
+        System.exit(0);
     }
+
 }

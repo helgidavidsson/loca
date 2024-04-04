@@ -30,9 +30,7 @@ public class UploadController {
         genreComboBox.setItems(FXCollections.observableArrayList(
                 "Pop", "Rokk", "Hip Hop", "Metal Rokk", "Indie",
                 "Alt", "Folk", "Country", "Kids Pop", "Klassísk",
-                "K pop", "Jazz", "R&B", "Punk", "Ambient"
-
-        ));
+                "K pop", "Jazz", "R&B", "Punk", "Ambient"));
     }
 
     @FXML
