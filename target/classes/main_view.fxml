@@ -3,30 +3,15 @@
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.layout.VBox?>
-HEAD
 
 <VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="vidmot.MainController">
     <!-- MenuBar til þess að hlaða upp skrá -->
-=======
-<?import javafx.scene.layout.BorderPane?>
-
-
-
-<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="vidmot.MainController">
->>>>>>> main
     <MenuBar>
         <Menu text="File">
             <MenuItem text="Hlaða upp skrá" onAction="#onUploadFileClick"/>
             <MenuItem text="Hætta" onAction="#exitApplication"/>
-<<<<<<< HEAD
 
         </Menu>
     </MenuBar>
 
-=======
-        </Menu>
-    </MenuBar>
-    <fx:include fx:id="genreViewController" source="genre-view.fxml"/>
-    <fx:include source="lagalisti-view.fxml"
->>>>>>> main
 </VBox>
