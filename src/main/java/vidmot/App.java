@@ -17,6 +17,7 @@ public class App extends Application {
         Scene scene = new Scene(root, 400, 200);
         stage.setTitle("Loca");
         stage.setScene(scene);
+        stage.setMaximized(true);
         stage.show();
     }
 

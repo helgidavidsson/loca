@@ -15,4 +15,5 @@
         </Menu>
     </MenuBar>
     <fx:include fx:id="genreViewController" source="genre-view.fxml"/>
+    <fx:include source="lagalisti-view.fxml"
 </VBox>
