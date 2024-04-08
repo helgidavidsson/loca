@@ -25,11 +25,13 @@ public class LagalistiController {
     private void updateSongList(String genre) {
         ObservableList<String> songsForGenre = FXCollections.observableArrayList();
         for (Song song : SongRepo.getSongs()) {
-            if (song.getGenre().equalsIgnoreCase(genre)) { // Match the genre, ignoring case
+            // If "All Genres" is selected or the song matches the selected genre
+            if (genre.equals("All Songs") || song.getGenre().equalsIgnoreCase(genre)) {
                 String displayText = song.getSongName() + " - " + song.getArtistName();
                 songsForGenre.add(displayText);
             }
         }
-        songListView.setItems(songsForGenre); // Update the ListView with songs matching the genre
+        songListView.setItems(songsForGenre); // Update the ListView
     }
+
 }
