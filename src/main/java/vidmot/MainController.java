@@ -11,9 +11,7 @@ import javafx.stage.Stage;
 public class MainController {
 
     @FXML
-    private GenreController genreViewController; // Ensure the fx:id is genreViewController in MainView.fxml for the
-                                                 // fx:include tag
-    // Þegar ýtt er á hlaða upp skrá:
+    private GenreController genreViewController;
 
     @FXML
     private void onUploadFileClick(ActionEvent event) throws Exception {

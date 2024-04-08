@@ -14,5 +14,5 @@
             <MenuItem text="Hætta" onAction="#exitApplication"/>
         </Menu>
     </MenuBar>
-    <fx:include fx:id="genreViewController" source="genre-view.fxml"/>
+        <fx:include fx:id="genreView" source="genre-view.fxml"/>
 </VBox>
