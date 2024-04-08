@@ -14,6 +14,17 @@ public class MainController {
     private GenreController genreViewController;
 
     @FXML
+    private LagalistiController lagalistiViewController; // Controller for lagalistiView
+
+    @FXML
+    private void initialize() {
+        // Now you have references to both controllers, you can set up communication
+        // between them
+        // For example, by passing a reference of one to the other
+        genreViewController.setLagalistiController(lagalistiViewController);
+    }
+
+    @FXML
     private void onUploadFileClick(ActionEvent event) throws Exception {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/upload-view.fxml"));
         if (fxmlLoader.getLocation() == null) {

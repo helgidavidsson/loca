@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?import javafx.scene.control.Menu?>
-<?import javafx.scene.control.MenuBar?>
-<?import javafx.scene.control.MenuItem?>
-<?import javafx.scene.layout.VBox?>
-<?import javafx.scene.layout.BorderPane?>
 
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 
-
-<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="vidmot.MainController">
+<VBox xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.2-ea" fx:controller="vidmot.MainController">
     <MenuBar>
         <Menu text="File">
-            <MenuItem text="Hlaða upp skrá" onAction="#onUploadFileClick"/>
-            <MenuItem text="Hætta" onAction="#exitApplication"/>
+            <MenuItem onAction="#onUploadFileClick" text="Hlaða upp skrá" />
+            <MenuItem onAction="#exitApplication" text="Hætta" />
         </Menu>
     </MenuBar>
-        <fx:include fx:id="genreView" source="genre-view.fxml"/>
+   <HBox prefHeight="400.0" prefWidth="618.0">
+      <children>
+              <fx:include fx:id="genreView" source="genre-view.fxml" />
+              <fx:include fx:id="lagalistiView" source="lagalisti-view.fxml" />
+      </children>
+   </HBox>
 </VBox>
