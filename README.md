@@ -18,7 +18,7 @@ Forritið leyfir notendum að:
 ## Hönnun
 
 - Við höfum lagt áherslu á notendaupplifun með einföldu og notendavænu útliti.
-- Forritið verður hönnuð með það í huga að vera aðgengilegt fólki af öllum aldri og tæknikunnáttu.
+- Forritið verður hannað með það í huga að vera aðgengilegt fólki af öllum aldri og tæknikunnáttu.
 - Útlitið verður haldið minimalistísku til að draga úr ringulreið og leyfa notendum að einbeita sér að tónlistinni.
 
 ## Tónlistarstefnur
