@@ -1,8 +1,7 @@
-/Users/daviddimitry/laerdomur/tolvunarfraedi/vidmotsforritun/hopverkefni-tonlistarspilari/loca/src/main/java/vidmot/lagalistiController.java
-/Users/daviddimitry/laerdomur/tolvunarfraedi/vidmotsforritun/hopverkefni-tonlistarspilari/loca/src/main/java/vidmot/SpilariController.java
-/Users/daviddimitry/laerdomur/tolvunarfraedi/vidmotsforritun/hopverkefni-tonlistarspilari/loca/src/main/java/vinnsla/Song.java
-/Users/daviddimitry/laerdomur/tolvunarfraedi/vidmotsforritun/hopverkefni-tonlistarspilari/loca/src/main/java/vidmot/MainController.java
-/Users/daviddimitry/laerdomur/tolvunarfraedi/vidmotsforritun/hopverkefni-tonlistarspilari/loca/src/main/java/vidmot/App.java
-/Users/daviddimitry/laerdomur/tolvunarfraedi/vidmotsforritun/hopverkefni-tonlistarspilari/loca/src/main/java/vidmot/GenreController.java
-/Users/daviddimitry/laerdomur/tolvunarfraedi/vidmotsforritun/hopverkefni-tonlistarspilari/loca/src/main/java/vidmot/UploadController.java
-/Users/daviddimitry/laerdomur/tolvunarfraedi/vidmotsforritun/hopverkefni-tonlistarspilari/loca/src/main/java/vinnsla/SongRepo.java
+/home/helgidavidsson/dev/tolvfr/vid/loca/src/main/java/vidmot/MainController.java
+/home/helgidavidsson/dev/tolvfr/vid/loca/src/main/java/vidmot/SpilariController.java
+/home/helgidavidsson/dev/tolvfr/vid/loca/src/main/java/vidmot/UploadController.java
+/home/helgidavidsson/dev/tolvfr/vid/loca/src/main/java/vinnsla/SongRepo.java
+/home/helgidavidsson/dev/tolvfr/vid/loca/src/main/java/vidmot/GenreController.java
+/home/helgidavidsson/dev/tolvfr/vid/loca/src/main/java/vinnsla/Song.java
+/home/helgidavidsson/dev/tolvfr/vid/loca/src/main/java/vidmot/App.java

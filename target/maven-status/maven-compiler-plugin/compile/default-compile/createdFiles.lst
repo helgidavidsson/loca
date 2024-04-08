@@ -1,5 +1,7 @@
 vidmot/SpilariController.class
+vidmot/MainController.class
 vidmot/GenreController.class
+vidmot/UploadController.class
 vinnsla/Song.class
-vidmot/lagalistiController.class
+vidmot/App.class
 vinnsla/SongRepo.class
