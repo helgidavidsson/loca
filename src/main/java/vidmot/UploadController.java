@@ -6,9 +6,11 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextField;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
+import vinnsla.Song;
 import javafx.collections.FXCollections;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
+import vinnsla.SongRepo;
 
 public class UploadController {
 
@@ -54,7 +56,6 @@ public class UploadController {
         String artistName = artistNameField.getText();
         String genre = genreComboBox.getValue();
 
-        // Skoðar ef eitthvert atriði er tómt
         if (filePath.isEmpty() || songName.isEmpty() || artistName.isEmpty() || genre == null) {
             Alert alert = new Alert(AlertType.ERROR);
             alert.setTitle("Vantar gögn");
@@ -62,17 +63,21 @@ public class UploadController {
             alert.setContentText("Vinsamlegast settu inn allar upplýsingar áður en þú vistar");
             alert.showAndWait();
         } else {
-            // HÉR MUN ÖLL LOGIC KOMA ÞEGAR LAGIÐ HEFUR VERIÐ VISTAÐ
-            // S.S. MUNUM VIÐ LÍKLEGA ÞURFA AÐ BÚA TIL EINHVERSKONAR
-            // GAGNASAFN AF LÖGUNUM
-            System.out.println("File Path: " + filePath);
-            System.out.println("Song Name: " + songName);
-            System.out.println("Artist Name: " + artistName);
-            System.out.println("Genre: " + genre);
+            Song newSong = new Song(filePath, songName, artistName, genre);
+            SongRepo.addSong(newSong);
 
-            // Loka glugga
+            System.out.println("Song added: " + newSong.getSongName());
+
+            // Print the entire list of songs
+            System.out.println("Current list of songs:");
+            for (Song song : SongRepo.getSongs()) {
+                System.out.println("Song Name: " + song.getSongName() + ", Artist Name: " + song.getArtistName()
+                        + ", Genre: " + song.getGenre() + ", File Path: " + song.getFilePath());
+            }
+
             Stage stage = (Stage) genreComboBox.getScene().getWindow();
             stage.close();
         }
     }
+
 }

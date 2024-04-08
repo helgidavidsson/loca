@@ -10,7 +10,9 @@ import javafx.stage.Stage;
 
 public class MainController {
 
-    // Þegar ýtt er á hlaða upp skrá:
+    @FXML
+    private GenreController genreViewController;
+
     @FXML
     private void onUploadFileClick(ActionEvent event) throws Exception {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/upload-view.fxml"));
