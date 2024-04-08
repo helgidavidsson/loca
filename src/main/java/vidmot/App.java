@@ -14,10 +14,9 @@ public class App extends Application {
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("/main_view.fxml"));
         VBox root = fxmlLoader.load();
-        Scene scene = new Scene(root, 400, 200);
+        Scene scene = new Scene(root, 595, 400);
         stage.setTitle("Loca");
         stage.setScene(scene);
-        stage.setMaximized(true);
         stage.show();
     }
 
