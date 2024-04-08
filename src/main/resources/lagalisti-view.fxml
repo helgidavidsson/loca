@@ -6,7 +6,7 @@
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="310.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vidmot.lagalistiController">
    <children>
-      <ListView layoutY="65.0" prefHeight="336.0" prefWidth="310.0" />
+      <ListView fx:id="Lagalisti" layoutY="65.0" prefHeight="336.0" prefWidth="310.0" />
       <Label alignment="CENTER" prefHeight="65.0" prefWidth="310.0" text="Label" textAlignment="CENTER">
          <font>
             <Font size="36.0" />

@@ -58,6 +58,11 @@ Dæmi um Maven skrá til að byggja javafx forrit
         </dependency>
         <dependency>
             <groupId>org.openjfx</groupId>
+            <artifactId>javafx-media</artifactId>
+            <version>${javafx.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.openjfx</groupId>
             <artifactId>javafx-graphics</artifactId>
             <version>${javafx.version}</version>
         </dependency>
@@ -74,6 +79,7 @@ Dæmi um Maven skrá til að byggja javafx forrit
             <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
+
 
     </dependencies>
 <!--
