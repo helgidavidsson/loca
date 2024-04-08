@@ -28,7 +28,7 @@ Dæmi um Maven skrá til að byggja javafx forrit
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <junit.version>5.8.2</junit.version>
-         <maven.compiler.release>17</maven.compiler.release>
+         <maven.compiler.release>11</maven.compiler.release>
         <maven.plugin.version>3.8.1</maven.plugin.version>
         <javafx.version>17.0.1</javafx.version>
             <javafx.maven.plugin.version>0.0.8</javafx.maven.plugin.version>
