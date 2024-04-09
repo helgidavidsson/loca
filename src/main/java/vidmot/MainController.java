@@ -22,6 +22,7 @@ public class MainController {
         // between them
         // For example, by passing a reference of one to the other
         genreViewController.setLagalistiController(lagalistiViewController);
+
     }
 
     @FXML

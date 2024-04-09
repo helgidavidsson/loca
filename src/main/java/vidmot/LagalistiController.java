@@ -16,6 +16,11 @@ public class LagalistiController {
     @FXML
     private ListView<String> songListView; // Add this line to link to your FXML ListView
 
+    public void initialize() {
+        // Default to showing all songs when the application starts.
+        setCurrentGenre("All Songs");
+    }
+
     // This method is called from GenreController when the genre changes
     public void setCurrentGenre(String genre) {
         currentGenre.setText(genre);
