@@ -16,4 +16,5 @@
               <fx:include fx:id="lagalistiView" source="lagalisti-view.fxml" />
       </children>
    </HBox>
+
 </VBox>
