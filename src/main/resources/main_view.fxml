@@ -15,4 +15,6 @@
         </Menu>
     </MenuBar>
         <fx:include fx:id="genreView" source="genre-view.fxml"/>
+
+
 </VBox>

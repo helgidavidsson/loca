@@ -32,4 +32,6 @@ public class MainController {
         System.exit(0);
     }
 
+    @FXML
+    private FooterController footerviewcontroller;
 }

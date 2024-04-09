@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Button?>
+
+<BorderPane  xmlns="http://javafx.com/javafx"
+             xmlns:fx="http://javafx.com/fxml"
+            fx:controller="MainController">
+    <!-- Main content -->
+    <center>
+        <!-- Main functionality: upload, categorize, create playlist, playback controls, select song -->
+        <!-- For example: -->
+        <ListView fx:id="songListView"/>
+        <Button text="Upload Music"/>
+        <Button text="Create Playlist"/>
+        <Button text="Play"/>
+        <Button text="Next"/>
+        <Button text="Pause"/>
+    </center>
+
+    <!-- Footer -->
+    <bottom>
+        <fx:include source="footer-view.fxml"/>
+    </bottom>
+
+</BorderPane>
