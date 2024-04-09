@@ -41,9 +41,18 @@ Forritið mun bjóða upp á fjölbreytt úrval tónlistarstefna, þar á meðal
 - Ambient
   og margt fleira.
 
-## Footer eiginleiki
+## Keyrsla á JavaFX forritinu
 
-- Footerinn mun sýna fjölda laga í hverjum lagalista, sem gefur notendum gott yfirsýn yfir tónlistarsafn sitt.
-- Það mun einnig sýna hvernig lögin raðast upp í tónlistarstefnur sem veitir notendum innsýn í safn sitt eftir stefnum.
+Til að keyra JavaFX forritið, fylgdu þessum einföldu skrefum:
+
+1. Opnaðu skipanalínu eða terminal.
+2. Farðu í möppuna sem inniheldur verkefnið þitt.
+3. Keyrðu eftirfarandi skipun til að þýða og keyra forritið:
+
+```shell
+mvn javafx:run
+```
+
+Gakktu úr skugga um að þú hafir Maven sett upp á kerfinu þínu og að pom.xml skráin í verkefninu þínu sé rétt stillt fyrir JavaFX verkefni.
 
 Við vonum að með þessum nýju eiginleikum muni forritið nýtast notendum vel og gera tónlistarupplifun þeirra enn auðveldari og ánægjulegri.
