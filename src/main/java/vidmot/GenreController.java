@@ -3,8 +3,6 @@ package vidmot;
 import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
 import javafx.scene.control.ListView;
-import javafx.beans.value.ChangeListener;
-import javafx.beans.value.ObservableValue;
 
 public class GenreController {
 
@@ -20,16 +18,13 @@ public class GenreController {
     @FXML
     public void initialize() {
         genreListView.setItems(FXCollections.observableArrayList(
-                "Pop", "Rokk", "Hip Hop", "Metal Rokk", "Indie",
-                "Alt", "Folk", "Country", "Kids Pop", "Klassísk",
+                "All Songs", "Pop", "Rock", "Hip Hop", "Metal Rock", "Indie",
+                "Alt", "Folk", "Country", "Kids Pop", "Classical",
                 "K pop", "Jazz", "R&B", "Punk", "Ambient"));
 
-        genreListView.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<String>() {
-            @Override
-            public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
-                if (lagalistiController != null) {
-                    lagalistiController.setCurrentGenre(newValue); // Call the method on LagalistiController
-                }
+        genreListView.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {
+            if (lagalistiController != null) {
+                lagalistiController.setCurrentGenre(newValue); // Update LagalistiController based on the selected genre
             }
         });
     }
