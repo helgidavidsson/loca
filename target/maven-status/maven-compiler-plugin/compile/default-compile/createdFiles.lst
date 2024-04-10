@@ -1,5 +1,5 @@
-vidmot/SpilariController.class
-vidmot/MainController.class
-vidmot/GenreController.class
-vinnsla/Song.class
-vidmot/App.class
+vidmot\App.class
+vinnsla\Song.class
+vidmot\GenreController.class
+vidmot\MainController.class
+vidmot\SpilariController.class
