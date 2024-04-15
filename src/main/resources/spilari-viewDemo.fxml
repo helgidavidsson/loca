@@ -3,11 +3,10 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.layout.HBox?>
 
-
-<HBox alignment="CENTER" fx:controller="vidmot.SpilariController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0" prefWidth="600.0" spacing="10.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0" prefWidth="600.0" spacing="10.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vidmot.SpilariController">
    <children>
-      <Button onAction="#onPlay" mnemonicParsing="false" text="Spila" />
-      <Button onAction="#onPause" mnemonicParsing="false" text="Pása" />
-      <Button onAction="#onStop" mnemonicParsing="false" text="Stöðva" />
+      <Button mnemonicParsing="false" text="Spila" onAction="#play"/>
+      <Button mnemonicParsing="false" text="Pása" onAction="#pause"/>
+      <Button mnemonicParsing="false" text="Stöðva" onAction="#stop"/>
    </children>
 </HBox>

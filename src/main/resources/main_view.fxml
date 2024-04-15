@@ -16,5 +16,5 @@
               <fx:include fx:id="lagalistiView" source="lagalisti-view.fxml" />
       </children>
    </HBox>
-    <fx:include source="spilari-viewDemo.fxml"/>
+   <fx:include fx:id="playerView" source="spilari-viewDemo.fxml" />
 </VBox>
