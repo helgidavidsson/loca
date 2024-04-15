@@ -1,0 +1,8 @@
+vidmot\App.class
+vidmot\LagalistiController.class
+vinnsla\Song.class
+vidmot\UploadController.class
+vidmot\GenreController.class
+vidmot\MainController.class
+vinnsla\SongRepo.class
+vidmot\SpilariController.class
