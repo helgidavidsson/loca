@@ -10,7 +10,6 @@ import javafx.scene.media.Media;
 public class SpilariController {
 
     private MediaPlayer mediaPlayer;
-
     public void playSong(String filePath) {
         if (mediaPlayer != null) {
             mediaPlayer.stop();
