@@ -3,7 +3,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.2-ea" fx:controller="vidmot.MainController">
+<VBox prefHeight="485.0" prefWidth="601.0" stylesheets="lagalistiview-styles.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vidmot.MainController">
     <MenuBar>
         <Menu text="File">
             <MenuItem onAction="#onUploadFileClick" text="Hlaða upp skrá" />
@@ -16,7 +16,5 @@
               <fx:include fx:id="lagalistiView" source="lagalisti-view.fxml" />
       </children>
    </HBox>
-
    <fx:include fx:id="playerView" source="spilari-viewDemo.fxml" />
-
 </VBox>
