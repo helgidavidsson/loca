@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="59.0" prefWidth="600.0" spacing="10.0" style="-fx-background-color: #222222;" stylesheets="@lagalistiview-styles.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vidmot.SpilariController">
+   <children>
+      <Button mnemonicParsing="false" onAction="#play" text="PLAY">
+         </Button>
+      <Button mnemonicParsing="false" onAction="#pause" text="PAUSE">
+         </Button>
+      <Button mnemonicParsing="false" onAction="#stop" text="STOP">
+         </Button>
+   </children>
+</HBox>

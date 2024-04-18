@@ -14,14 +14,26 @@ public class MainController {
     private GenreController genreViewController;
 
     @FXML
-    private LagalistiController lagalistiViewController; // Controller for lagalistiView
+    private LagalistiController lagalistiViewController; // Assuming this is correctly set via <fx:include>
 
     @FXML
-    private void initialize() {
-        // Now you have references to both controllers, you can set up communication
-        // between them
-        // For example, by passing a reference of one to the other
-        genreViewController.setLagalistiController(lagalistiViewController);
+    private SpilariController playerViewController; // This should match fx:id + "Controller"
+
+    @FXML
+    private void initialize() throws Exception {
+        // Ensure that the genreViewController and lagalistiViewController are already
+        // set via FXML injection
+        if (genreViewController != null && lagalistiViewController != null) {
+            genreViewController.setLagalistiController(lagalistiViewController);
+        }
+
+        // Assuming the Spilari view is included in the Main view, its controller should
+        // be automatically instantiated.
+        // We need to ensure that SpilariController is set in LagalistiController to
+        // manage media playback.
+        if (lagalistiViewController != null && playerViewController != null) {
+            lagalistiViewController.setSpilariController(playerViewController);
+        }
     }
 
     @FXML

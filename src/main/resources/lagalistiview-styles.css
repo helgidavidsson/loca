@@ -1,0 +1,64 @@
+.list-view {
+    -fx-background-color: #333; /* Dark grey background */
+    -fx-text-fill: #FF00FF; /* Light grey text */
+}
+
+.list-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: #FF00FF; /* Light grey text */
+}
+
+.list-cell:filled:selected, .list-cell:filled:selected:hover {
+    -fx-background-color: #555555; /* Slightly lighter grey for selection */
+    -fx-text-fill: #FF00FF; /* White text for selected items */
+}
+
+.list-cell:nth-child(even) {
+    -fx-background-color: #2a2a2a; /* Even darker shade for alternate rows */
+}
+
+.menu-bar {
+    -fx-background-color: #222222; /* Dark grey background for the menu bar */
+    -fx-text-fill: #000000;
+}
+
+.menu {
+    -fx-text-fill: #000000;
+    -fx-background-color: transparent;
+}
+
+.menu-item {
+    -fx-background-color: transparent;
+    -fx-text-fill: #ddd; /* Light grey text for menu items */
+}
+
+.menu-item:focused {
+    -fx-background-color: #555555; /* Slightly lighter grey for focused menu items */
+    -fx-text-fill: white;
+}
+
+.menu-item:hover {
+    -fx-background-color: #444444; /* Darker grey when hovered over */
+    -fx-text-fill: white;
+}
+.button {
+    -fx-background-radius: 20; /* Adjusted to half of the height for maximum curvature on the top and bottom */
+    -fx-min-width: 100px; /* Ensures the button is wide enough */
+    -fx-min-height: 40px; /* Ensures the button is tall enough */
+    -fx-max-width: 100px; /* Limits width to maintain the oval shape */
+    -fx-max-height: 40px; /* Limits height to maintain the oval shape */
+    -fx-background-color: #333; /* Dark grey background */
+    -fx-text-fill: #FF00FF; /* Pink text */
+    -fx-font-weight: bold;
+    -fx-border-color: #555; /* Slightly lighter grey border */
+    -fx-border-width: 2px; /* Border width */
+    -fx-border-radius: 20; /* Matches the background radius for a consistent edge */
+}
+
+.button:hover {
+    -fx-background-color: #444; /* Darker grey when hovered over */
+}
+
+.button:pressed {
+    -fx-background-color: #222; /* Even darker grey when pressed */
+}

@@ -12,11 +12,29 @@ public class LagalistiController {
 
     @FXML
     private Label currentGenre;
-
     @FXML
-    private ListView<String> songListView; // Add this line to link to your FXML ListView
+    private ListView<String> songListView;
 
-    // This method is called from GenreController when the genre changes
+    private SpilariController spilariController;
+
+    public void setSpilariController(SpilariController spilariController) {
+        this.spilariController = spilariController;
+    }
+
+    public void initialize() {
+        setCurrentGenre("All Songs");
+        songListView.getSelectionModel().selectedItemProperty().addListener((obs, oldSelection, newSelection) -> {
+            if (newSelection != null) {
+                // When a new song is selected, find its file path and tell SpilariController to
+                // play it
+                Song selectedSong = SongRepo.findSongByName(newSelection);
+                if (selectedSong != null && spilariController != null) {
+                    spilariController.playSong(selectedSong.getFilePath());
+                }
+            }
+        });
+    }
+
     public void setCurrentGenre(String genre) {
         currentGenre.setText(genre);
         updateSongList(genre);
@@ -25,13 +43,10 @@ public class LagalistiController {
     private void updateSongList(String genre) {
         ObservableList<String> songsForGenre = FXCollections.observableArrayList();
         for (Song song : SongRepo.getSongs()) {
-            // If "All Genres" is selected or the song matches the selected genre
             if (genre.equals("All Songs") || song.getGenre().equalsIgnoreCase(genre)) {
-                String displayText = song.getSongName() + " - " + song.getArtistName();
-                songsForGenre.add(displayText);
+                songsForGenre.add(song.getSongName()); // Assuming the song name is unique
             }
         }
-        songListView.setItems(songsForGenre); // Update the ListView
+        songListView.setItems(songsForGenre);
     }
-
 }
